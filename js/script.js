@@ -33,5 +33,13 @@ if (etaPasseggero < 18) {
 
 var prezzoBigliettoKm = 0.21;
 
-var prezzoFinale = parseInt(numeroKm * prezzoBigliettoKm);
-console.log('Prezzo finale:', prezzoFinale);
+var prezzoFinale = numeroKm * prezzoBigliettoKm;
+console.log('Prezzo finale:', prezzoFinale, '€');
+
+if (etaPasseggero < 18) {
+    console.log('Sconto del 20%', prezzoFinale * 20 / 100 );
+} else if (etaPasseggero >= 65) {
+    console.log('Sconto del 40%', prezzoFinale * 40 / 100 );
+}
+
+
