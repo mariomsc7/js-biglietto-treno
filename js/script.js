@@ -34,25 +34,29 @@ if (etaPasseggero < 18) {
 var prezzoBigliettoKm = 0.21;
 
 var prezzoFinale = numeroKm * prezzoBigliettoKm;
-console.log('Prezzo finale:', prezzoFinale, '€');
+
 
 if (etaPasseggero < 18) {
-    console.log('Sconto del 20%', prezzoFinale * 20 / 100 );
+    var sconto20 = prezzoFinale * 20 / 100;
+    var prezzoScontato = parseInt(prezzoFinale - sconto20);
+    console.log('Prezzo Scontato', prezzoScontato, '€');
+    document.getElementById('risultato').innerHTML = 'Prezzo scontato per i minorenni ' + prezzoScontato + ' €';
+
 } else if (etaPasseggero >= 65) {
-    console.log('Sconto del 40%', prezzoFinale * 40 / 100 );
+    var sconto40 = prezzoFinale * 40 / 100;
+    var prezzoScontato = parseInt(prezzoFinale - sconto40);
+    console.log('Prezzo Scontato', prezzoScontato, '€');
+    document.getElementById('risultato').innerHTML = 'Prezzo per over 65 ' + prezzoScontato + ' €';
+
+} else {
+    console.log('Prezzo finale:', prezzoFinale, '€');
+    document.getElementById('risultato').innerHTML = 'Prezzo ' + prezzoFinale + ' €';
 }
 
-var sconto20 = prezzoFinale * 20 / 100;
 
 
-var prezzoScontato = parseInt(prezzoFinale - sconto20);
-console.log('Prezzo Scontato', prezzoScontato, '€');
 
 
-var sconto40 = prezzoFinale * 40 / 100;
-
-var prezzoScontato = parseInt(prezzoFinale - sconto40);
-console.log('Prezzo Scontato', prezzoScontato, '€');
 
 // 4.
 
