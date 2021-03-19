@@ -53,6 +53,7 @@ var sconto40 = prezzoFinale * 40 / 100;
 
 var prezzoScontato = parseInt(prezzoFinale - sconto40);
 console.log('Prezzo Scontato', prezzoScontato, '€');
-    
+
+// 4.
 
 
