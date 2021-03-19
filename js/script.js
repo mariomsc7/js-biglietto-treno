@@ -25,13 +25,13 @@ if (etaPasseggero < 18) {
     console.log('Minorenne');
 } else if (etaPasseggero >= 65) {
     console.log('over 65');
-} else if (etaPasseggero > 18);
-    console.log('Maggiorenne')
-
-
-
-
+} else { (etaPasseggero > 18)
+    console.log('Maggiorenne');
+}
 
 // 3.
 
-var prezzoBigliettoKm = 0.21 + '€';
+var prezzoBigliettoKm = 0.21;
+
+var prezzoFinale = parseInt(numeroKm * prezzoBigliettoKm);
+console.log('Prezzo finale:', prezzoFinale);
