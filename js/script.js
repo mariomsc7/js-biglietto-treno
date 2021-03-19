@@ -42,4 +42,17 @@ if (etaPasseggero < 18) {
     console.log('Sconto del 40%', prezzoFinale * 40 / 100 );
 }
 
+var sconto20 = prezzoFinale * 20 / 100;
+
+
+var prezzoScontato = parseInt(prezzoFinale - sconto20);
+console.log('Prezzo Scontato', prezzoScontato, '€');
+
+
+var sconto40 = prezzoFinale * 40 / 100;
+
+var prezzoScontato = parseInt(prezzoFinale - sconto40);
+console.log('Prezzo Scontato', prezzoScontato, '€');
+    
+
 
